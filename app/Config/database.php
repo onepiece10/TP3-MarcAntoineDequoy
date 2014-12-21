@@ -58,9 +58,9 @@ class DATABASE_CONFIG {
 	public $default = array(
 		'datasource' => 'Database/Mysql',
 		'persistent' => false,
-		'host' => 'localhost',
-		'login' => 'root',
-		'password' => 'mysql',
+		'host' => 'https://phptp3-marcdequoy.rhcloud.com/phpmyadmin/',
+		'login' => 'admin3uqUYxy',
+		'password' => 'IylRhlvhec2R',
 		'database' => 'msp',
 		'prefix' => '',
 		'encoding' => 'UTF8',
