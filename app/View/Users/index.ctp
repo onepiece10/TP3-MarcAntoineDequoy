@@ -17,6 +17,7 @@
           <th>#</th>
           <th><?php echo __('Username') ?></th>
           <th><?php echo __('Role') ?></th>
+          <th><?php echo __('Avatar') ?></th>
           <th>#</th>
         </tr>
       </thead>
@@ -26,6 +27,7 @@
           <td width="50px"><?php echo $user['User']['id'] ?></td>
           <td><?php echo $user['User']['username'] ?></td>
           <td><?php echo $user['User']['role'] ?></td>
+          <td><?php echo $user['User']['avatar'] ?></td>
           <td width="150px">
             <?php echo $this->Html->link(__('View'), array('action'=> 'controller', 'action'=> 'view',$user['User']['username'], 'language' => $this->params['language'])) ?> |
             <?php echo $this->Html->link(__('Edit'), array('action'=> 'controller', 'action'=> 'edit',$user['User']['id'],'language' => $this->params['language'])) ?> |

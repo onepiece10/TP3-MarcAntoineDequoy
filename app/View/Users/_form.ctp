@@ -1,6 +1,6 @@
 <div class="row">
   <div class="col-lg-4 col-lg-offset-4">
-    <?php echo $this->Form->create('User');?>
+    <?php echo $this->Form->create('User', array('type' => 'file'));?>
     <div class="center">
       <h2><?php echo $label ?></h2>
     </div>
@@ -19,12 +19,17 @@
             'value' => false));?>
 
 
-	      <?php if(AuthComponent::user('role') == 'admin'){?>
+	<?php if(AuthComponent::user('role') == 'admin'){?>
         <?php echo $this->Form->input('role', array(
             'label' => __('Role'),
             'options' => array('admin' => __('Admin'), 'author' => __('Author')),
             'selected' => !empty( $user['role'] ) ? $user['role'] : ''));?>
 	      <?php }?>
+    
+        <?php echo $this->Form->input('avatar_file', array(
+            'label' => __('Votre avatar (jpg ou png)'),
+            'type' => 'file'));?>
+
       
         <?php echo $this->Form->end(__("Submit"));?>
   </div>

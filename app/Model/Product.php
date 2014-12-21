@@ -37,6 +37,15 @@ class Product extends AppModel {
 
 	//The Associations below have been created with all possible keys, those that are not needed can be removed
 
+        public $belongsTo = array(
+		'Subcategory' => array(
+			'className' => 'Subcategory',
+			'foreignKey' => 'subcategory_id',
+			'conditions' => '',
+			'fields' => '',
+			'order' => ''
+		)
+	);
 /**
  * hasAndBelongsToMany associations
  *
@@ -57,5 +66,4 @@ class Product extends AppModel {
 			'finderQuery' => '',
 		)
 	);
-
 }

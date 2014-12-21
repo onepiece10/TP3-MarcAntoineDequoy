@@ -59,8 +59,13 @@ class PlanetsController extends AppController {
 				$this->Session->setFlash(__('The planet could not be saved. Please, try again.'), 'flash_fail');
 			}
 		}
-		$users = $this->Planet->User->find('list');
-		$this->set(compact('users'));
+                if ($this->request->is('ajax')) {
+                    $term = $this->request->query('term');
+                    $planetNames = $this->Planet->getCarNames($term);
+                    $users = $this->Planet->User->find('list');
+                    $this->set(compact('carNames', 'users'));
+                    $this->set('_serialize', 'planetNames');
+                }
 	}
 
 /**

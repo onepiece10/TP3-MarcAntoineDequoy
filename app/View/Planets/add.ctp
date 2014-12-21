@@ -3,7 +3,11 @@
 	<fieldset>
 		<legend><?php echo __('Add Planet'); ?></legend>
 	<?php
-		echo $this->Form->input('name');
+                $this->Html->script('https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js', array('inline' => false));
+                $this->Html->script('https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js', array('inline' => false));
+                $this->Html->script('View/Cars/index', array('inline' => false));
+                
+		echo $this->Form->input('name', array('class' => 'ui-autocomplete','id' => 'autocomplete'));
 		echo $this->Form->input('info');
 		echo $this->Form->input('user_id');
 	?>

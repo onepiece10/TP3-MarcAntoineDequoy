@@ -8,6 +8,7 @@ App::uses('AppController', 'Controller');
  */
 class ProductsController extends AppController {
 
+        public $helpers = array('Js');
 /**
  * Components
  *
@@ -59,8 +60,11 @@ class ProductsController extends AppController {
 				$this->Session->setFlash(__('The product could not be saved. Please, try again.'), 'flash_fail');
 			}
 		}
+                $categories = $this->Product->Subcategory->Category->find('list');
+                $subcategories = $this->Product->Subcategory->find('list');
+                //$subcategories = array('choisir categorie');
 		$shippings = $this->Product->Shipping->find('list');
-		$this->set(compact('shippings'));
+		$this->set(compact('shippings', 'categories', 'subcategories'));
 	}
 
 /**

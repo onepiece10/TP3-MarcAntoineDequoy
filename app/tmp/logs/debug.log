@@ -211,3 +211,13 @@ App::_checkFatalError() - CORE\Cake\Core\App.php, line 931
 App::shutdown() - CORE\Cake\Core\App.php, line 904
 [main] - [internal], line ??
 
+2014-12-20 21:26:45 Debug: The user admin (ID: 1) edited user (ID: 2)
+2014-12-20 21:28:28 Debug: The user admin (ID: 1) edited user (ID: 2)
+2014-12-20 21:30:56 Debug: The user admin (ID: 1) edited user (ID: 2)
+2014-12-20 21:33:50 Debug: The user admin (ID: 1) edited user (ID: 2)
+2014-12-20 21:35:19 Debug: The user admin (ID: 1) edited user (ID: 2)
+2014-12-20 21:35:50 Debug: The user admin (ID: 1) edited user (ID: 2)
+2014-12-20 21:44:15 Debug: The user admin (ID: 1) edited user (ID: 2)
+2014-12-20 21:49:51 Debug: The user admin (ID: 1) edited user (ID: 2)
+2014-12-20 21:54:36 Debug: The user admin (ID: 1) edited user (ID: 2)
+2014-12-21 19:52:59 Debug: The user admin (ID: 1) registered user (ID: 6)
