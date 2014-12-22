@@ -54,6 +54,15 @@
 						<li><a href="<?php echo $this->params->webroot . $this->params['language'] ?>/products/add"><i class="fa fa-plus"></i> Add new products</a></li>
 					</ul>
 				</li>
+                                
+                                <li class="dropdown <?php echo $this->params->params['controller'] == 'products' ? 'active' : ''?>">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-table"></i> Test <b
+							class="caret"></b></a>
+					<ul class="dropdown-menu">
+						<li><a href="<?php echo $this->params->webroot . $this->params['language'] ?>/products"><i class="fa fa-list"></i> List</a></li>
+						<li><a href="<?php echo $this->params->webroot . $this->params['language'] ?>/products/add"><i class="fa fa-plus"></i> Add new products</a></li>
+					</ul>
+				</li>
 			</ul>
 			<li><a href="<?php echo $this->params->webroot . 'fra' ?>/planets">Francais</a>
 			<a href="<?php echo $this->params->webroot . 'eng' ?>/planets"> English</a></li>
@@ -81,8 +90,8 @@
 	<!-- /.navbar-collapse -->
 </nav>
 <?php } ?>
-          <?php 
+<?php 
    echo $this->Html->image("msplogo.svg");
-  ?>
+?>
 
 
