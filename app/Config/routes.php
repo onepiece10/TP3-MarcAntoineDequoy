@@ -29,7 +29,7 @@
 		Router::connect('/', array('controller' => 'users', 'action' => 'login'));
 	    //Router::connect('/:language', array('controller' => 'users', 'action' => 'login'), array('language' => '[a-z]{3}'));
 	}
-	Router::connect('/home', array('controller' => 'planets', 'action' => 'index'));
+	Router::connect('/fra/home', array('controller' => 'planets', 'action' => 'index'));
 	Router::connect('/:language/home', array('controller' => 'planets', 'action' => 'index'), array('language' => '[a-z]{3}'));
 
 	/* Profile page */
