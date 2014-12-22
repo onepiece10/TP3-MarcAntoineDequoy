@@ -3458,3 +3458,21 @@ Request URL: /TP2-MSP/mspLogo.svg
 Stack Trace:
 #0 H:\UniServerZ\www\TP2-MSP\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 {main}
+2014-12-22 02:59:23 Error: [MissingControllerException] Controller class InformationsController could not be found.
+Exception Attributes: array (
+  'class' => 'InformationsController',
+  'plugin' => NULL,
+)
+Request URL: /TP2-MSP/informations/about/6
+Stack Trace:
+#0 H:\UniServerZ\www\TP2-MSP\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-12-22 03:00:42 Error: [MissingControllerException] Controller class Logo.svgController could not be found.
+Exception Attributes: array (
+  'class' => 'Logo.svgController',
+  'plugin' => NULL,
+)
+Request URL: /TP2-MSP/img/logo.svg
+Stack Trace:
+#0 H:\UniServerZ\www\TP2-MSP\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}

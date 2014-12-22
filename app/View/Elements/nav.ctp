@@ -8,12 +8,10 @@
 			<span class="icon-bar"></span>
 			<span class="icon-bar"></span>
 		</button>
-		<?php 
-                echo $this->Html->image("mspLogo.svg", array(
-                 "alt"=>"logo SVG",
-                 "class"=>"container",
-                 "url"=>array('controller'=>'informations','action'=>'about',6)));
-               ?>
+		<?php echo $this->Html->link(
+			Configure::read('Application.name'),
+			AuthComponent::user('id') ? "/home" : "/"
+			, array('class' => 'navbar-brand')) ?>
 	</div>
 
 	<!-- Collect the nav links, forms, and other content for toggling -->
@@ -83,5 +81,8 @@
 	<!-- /.navbar-collapse -->
 </nav>
 <?php } ?>
+          <?php 
+   echo $this->Html->image("msplogo.svg");
+  ?>
 
 
